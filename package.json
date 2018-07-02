@@ -1,0 +1,36 @@
+{
+  "name": "simple-oauth2-facebook",
+  "version": "0.5.0",
+  "description": "A simple Node.js client library for Facebook OAuth2",
+  "keywords": [
+    "oauth2",
+    "auth2-client",
+    "facebook-api",
+    "facebook-oauth2",
+    "simple-oauth2"
+  ],
+  "author": "JimmyCode Social <hi@jimmycode.com>",
+  "contributors": [
+    {
+      "name": "Alberto Menendez Romero",
+      "url": "https://www.linkedin.com/in/albertomr86/"
+    }
+  ],
+  "homepage": "https://github.com/jimmycodesocial/simple-oauth2-facebook",
+  "bugs": {
+    "url": "https://github.com/jimmycodesocial/simple-oauth2-facebook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmycodesocial/simple-oauth2-facebook.git"
+  },
+  "engine": {
+    "node": ">=8.0"
+  },
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "simple-oauth2": "^2.2.0"
+  }
+}
