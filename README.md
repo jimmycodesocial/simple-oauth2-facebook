@@ -121,7 +121,7 @@ const facebook = simpleOAuth2Facebook.create({
 });
 
 // Ask the user to authorize.
-router.get('/login/facebook', facebook.authorize);
+router.get('/auth/facebook', facebook.authorize);
 
 // Exchange the token for the access token.
 router.get('/auth/facebook/callback', facebook.accessToken, (req, res) => {
