@@ -10,13 +10,17 @@ Latest Node 8 LTS or newer versions.
 
 ## Getting started
 
-`npm install --save simple-oauth2 simple-oauth2-facebook`
+```
+npm install --save simple-oauth2 simple-oauth2-facebook
+```
 
 or 
 
-`yarn add simple-oauth2 simple-oauth2-facebook`
+```
+yarn add simple-oauth2 simple-oauth2-facebook
+```
 
-## Usage
+### Usage
 
 ```js
 const simpleOAuth2Facebook = require('simple-oauth2-facebook');
@@ -28,16 +32,18 @@ const facebook = simpleOAuth2Facebook.create(options);
 * getToken: Middleware for callback processing and exchange the authorization token for an `access_token`
 * oauth2: The underlying [simple-oauth2](https://github.com/lelylan/simple-oauth2) instance.
 
-## Options
+### Options
 
 SimpleOAuth2Facebook comes with default values for most of the options.
 
 *Required options*
+
 | Option       | Description                                   |
 |--------------|-----------------------------------------------|
 | clientId     | Your App Id.                                  |
 | clientSecret | Your App Secret Id.                           |
 | callbackURL  | Callback configured when you created the app. |
+
 
 *Other options*
 
