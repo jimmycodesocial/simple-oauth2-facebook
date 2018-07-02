@@ -1,4 +1,4 @@
-# Simple Facebook OAuth2
+# Simple OAuth2 Facebook
 
 This library is a wrapper around [Simple OAuth2 Library](https://github.com/lelylan/simple-oauth2)
 
@@ -36,7 +36,7 @@ const facebook = simpleOAuth2Facebook.create(options);
 
 SimpleOAuth2Facebook comes with default values for most of the options.
 
-*Required options*
+**Required options**
 
 | Option       | Description                                   |
 |--------------|-----------------------------------------------|
@@ -45,7 +45,7 @@ SimpleOAuth2Facebook comes with default values for most of the options.
 | callbackURL  | Callback configured when you created the app. |
 
 
-*Other options*
+**Other options**
 
 | Option           | Default                      | Description                                                                                                                                                                               |
 |------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -124,7 +124,7 @@ const facebook = simpleOAuth2Facebook.create({
 router.get('/login/facebook', facebook.authorize);
 
 // Exchange the token for the access token.
-router.get('/login/facebook/callback', facebook.accessToken, (req, res) => {
+router.get('/auth/facebook/callback', facebook.accessToken, (req, res) => {
   return res.status(200).json(req.token);
 });
 ```
