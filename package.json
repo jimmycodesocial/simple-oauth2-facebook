@@ -1,6 +1,6 @@
 {
   "name": "simple-oauth2-facebook",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simple Node.js client library for Facebook OAuth2",
   "keywords": [
     "oauth2",
