@@ -11,19 +11,19 @@ Latest Node 8 LTS or newer versions.
 ## Getting started
 
 ```
-npm install --save simple-oauth2 simple-oauth2-facebook
+npm install --save simple-oauth2 @jimmycode/simple-oauth2-facebook
 ```
 
 or 
 
 ```
-yarn add simple-oauth2 simple-oauth2-facebook
+yarn add simple-oauth2 @jimmycode/simple-oauth2-facebook
 ```
 
 ### Usage
 
 ```js
-const simpleOAuth2Facebook = require('simple-oauth2-facebook');
+const simpleOAuth2Facebook = require('@jimmycode/simple-oauth2-facebook');
 const facebook = simpleOAuth2Facebook.create(options);
 ```
 
@@ -112,7 +112,7 @@ router.get('/auth/facebook/callback', async(req, res) => {
 ### With SimpleOAuth2Facebook
 
 ```js
-const simpleOAuth2Facebook = require('simple-oauth2-facebook');
+const simpleOAuth2Facebook = require('@jimmycode/simple-oauth2-facebook');
 
 const facebook = simpleOAuth2Facebook.create({
   clientId: process.env.FACEBOOK_APP_ID,
